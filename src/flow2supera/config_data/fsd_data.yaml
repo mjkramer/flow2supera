@@ -1,0 +1,40 @@
+SuperaDriver:
+    LogLevel: WARNING
+    AssertInOutVoxelCount: False
+
+Flow2Supera:
+    PropertyConfig:
+        ParserConfigKeyword: 'fsd'
+        SimConfigKeyword:    'fsd'
+        TileLayout: ''
+        DetectorProperties: ''
+
+    DataType: ['data', '']
+    HitsType: 'prompt' #Only prompt or final
+
+BBoxAlgorithm: BBoxInteraction
+BBoxConfig:
+    LogLevel:   WARNING
+    Seed:       -1
+
+    # The below were taken by histogramming the hits in a data file
+    BBoxSize:   [94.88, 297.24, 94.88]
+    BBoxTop:    [47.44, 148.62, 47.44]
+    BBoxBottom: [-47.44, -148.62, -47.44]
+    VoxelSize:  [0.4434, 0.4434, 0.4434]
+
+LabelAlgorithm: LArTPCMLReco3D
+LabelConfig:
+    #
+    # SuperaAtomic::Driver configuration
+    #
+    LogLevel: WARNING
+    DeltaSize:    10
+    ComptonSize:  10
+    LEScatterSize: 5
+    TouchDistance: 1
+    StoreLEScatter:   True
+    SemanticPriority: [1,0,2,3,4]
+    EnergyDepositThreshold: 0.0
+    RewriteInteractionID:  False
+    MergeUnassociatedEDeps: True
