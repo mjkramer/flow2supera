@@ -21,7 +21,7 @@ BBoxConfig:
     BBoxSize:   [94.88, 297.24, 94.88]
     BBoxTop:    [47.44, 148.62, 47.44]
     BBoxBottom: [-47.44, -148.62, -47.44]
-    VoxelSize:  [0.4434, 0.4434, 0.4434]
+    VoxelSize:  [0.372, 0.372, 0.372]
 
 LabelAlgorithm: LArTPCMLReco3D
 LabelConfig:
