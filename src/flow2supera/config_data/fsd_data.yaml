@@ -17,10 +17,9 @@ BBoxConfig:
     LogLevel:   WARNING
     Seed:       -1
 
-    # The below were taken by histogramming the hits in a data file
-    BBoxSize:   [94.88, 297.24, 94.88]
-    BBoxTop:    [47.44, 148.62, 47.44]
-    BBoxBottom: [-47.44, -148.62, -47.44]
+    BBoxSize:   [142.848, 357.12, 142.848]
+    BBoxTop:    [70.84798665, 189.7200061, 81.69211621]
+    BBoxBottom: [-72.00001335, -167.3999939, -61.15588379]
     VoxelSize:  [0.372, 0.372, 0.372]
 
 LabelAlgorithm: LArTPCMLReco3D
@@ -38,3 +37,4 @@ LabelConfig:
     EnergyDepositThreshold: 0.0
     RewriteInteractionID:  False
     MergeUnassociatedEDeps: True
+
